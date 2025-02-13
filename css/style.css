@@ -1,0 +1,358 @@
+/* ====== IMPORTAÇÃO DE FONTE ====== */
+@import url('https://fonts.googleapis.com/css2?family=Miagra&display=swap');
+
+/* ====== FUNDO E ESTILO GERAL ====== */
+body {
+  background: radial-gradient(circle, #d3e47d, #d9a673);
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== MENU DE NAVEGAÇÃO ====== */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+    background: #ffb89e; /* Cor padrão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; 
+    height: 40px;
+}
+
+nav a.ativo {
+    background: #6b5b3c;
+    color: white;
+}
+
+/* ====== HOVER ====== */
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* ====== SEÇÃO PRINCIPAL ====== */
+.apresentacao, .sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+}
+
+/* ====== TEXTO ====== */
+.texto, .sobre .conteudo {
+  text-align: left;
+  max-width: 600px;
+}
+
+.texto h1, .sobre h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #262626;
+  margin: 0 0 20px 0;
+}
+
+.sobre p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ====== IMAGENS ====== */
+.imagem img, .sobre img {
+  width: 350px;
+  height: auto;
+  border-radius: 15px;
+  
+}
+
+/* ====== BORBOLETA ====== */
+.borboleta-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.borboleta {
+  width: 30px; 
+  height: auto;
+}
+
+/* ====== BOTÃO DE SAUDAÇÃO ====== */
+#saudacao {
+  background: #f08951;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* ====== BOTÃO E IMAGEM CONTAINER ====== */
+.button-image-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.small-image {
+  width: 100px;
+  height: auto;
+}
+
+/* ====== ESTILO DO SLIDER ====== */
+.slider-container {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+/* ====== FORMULÁRIO DE CONTATO ====== */
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    margin: 50px auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+/* Título */
+.container h2 {
+    font-size: 24px;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo */
+.container p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Campos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Checkbox e termos */
+.termos {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.termos a {
+    color: #f08951;
+    text-decoration: none;
+}
+
+/* Botão de envio */
+button {
+    background: #f08951;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ====== RATINHO DIVO ====== */
+.rato {
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90px;
+  height: auto;
+  border: none;
+}
+
+button:hover {
+    background: #ffb89e;
+}
+
+/*======CALCULADORA=======*/
+.calculadora {
+    background: #f4eed6;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    margin: 50px auto;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.8em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; /* Reduzi de 10px para 5px para diminuir os espaços */
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px; /* Reduzi ainda mais o espaço entre os botões */
+    padding: 10px; /* Ajuste para um espaçamento mais uniforme */
+    width: 90%; /* Reduzindo um pouco a largura da grade */
+    margin: auto; /* Centralizando */
+}
+
+button {
+    width: 100%;
+    height: 50px; /* Diminuindo a altura dos botões */
+    font-size: 1.2em; /* Ajustando o tamanho do texto */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.igual {
+    grid-column: span 2;
+}
+
+.operador {
+    background: #9c8f7d;
+    color: white;
+}
+
+.igual {
+    background: #9c8f7d;
+    color: white;
+    grid-column: span 2;
+}
+
+.zero {
+    grid-column: span 2;
+}
+body {
+   
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #ffa238;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #f8ae72;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 10px;
+}
+footer{
+    color:black;
+    background-color:#dd8c69;
+   
+}
